@@ -1,0 +1,5 @@
+02-Dec-2022 12:33:38 ERROR - Service.INVALID_CREDENTIALS
+java.lang.Exception: Service.INVALID_CREDENTIALS
+	at com.java.logging.UserAuthentication.showUser(UserAuthentication.java:13) [bin/:?]
+	at com.java.logging.Tester.main(Tester.java:8) [bin/:?]
+02-Dec-2022 12:34:04 INFO - Inside function definition
