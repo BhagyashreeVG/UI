@@ -1,0 +1,5 @@
+02-Dec-2022 12:20:38 INFO - Logged in successfully
+02-Dec-2022 12:21:06 ERROR - SERVICE.INVALIDCREDENTIALS
+java.lang.Exception: SERVICE.INVALIDCREDENTIALS
+	at com.java.service.UserAuthentication.checkUser(UserAuthentication.java:12) [bin/:?]
+	at com.java.ui.Tester.main(Tester.java:16) [bin/:?]
