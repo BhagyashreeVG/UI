@@ -1,0 +1,8 @@
+02-Dec-2022 07:38:09 INFO - Logged in successfully
+02-Dec-2022 07:38:29 ERROR - [Ljava.lang.StackTraceElement;@13d9cbf5
+02-Dec-2022 07:39:06 ERROR - SERVICE.INVALIDCREDENTIALS
+02-Dec-2022 07:40:05 ERROR - SERVICE.INVALIDCREDENTIALS
+java.lang.Exception: SERVICE.INVALIDCREDENTIALS
+	at com.java.service.UserAuthentication.checkUser(UserAuthentication.java:12) [bin/:?]
+	at com.java.ui.Tester.main(Tester.java:16) [bin/:?]
+02-Dec-2022 08:34:14 INFO - Logged in successfully
