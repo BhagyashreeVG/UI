@@ -70,76 +70,7 @@ class DietPlannerTest {
 			Assertions.assertEquals(2418, bmi);
 		}
 	}
-	
-	@Nested 
-	class coderTest {
 		
-		@Test
-		void should_Set_Correct_Height() {
-			Coder code = new Coder(5,54);
-			code.setHeight(5);
-			Assertions.assertTrue(code.getHeight() == 5);
-		}
-		
-		@Test
-		void should_Set_Correct_Weight() {
-			Coder code = new Coder(5,54);
-			code.setWeight(54);
-			Assertions.assertTrue(code.getWeight() == 54);
-		}
-		
-		@Test
-		void should_Set_Correct_Age() {
-			Coder code = new Coder(5,54,23,Gender.MALE);
-			code.setAge(23);
-			Assertions.assertTrue(code.getAge() == 23);
-		}
-		
-		@Test
-		void should_Set_Correct_Gender() {
-			Coder code = new Coder(5,54,24,Gender.FEMALE);
-			code.setGender(Gender.FEMALE);
-			Assertions.assertTrue(code.getGender() == Gender.FEMALE);
-		}
-	}
-	
-	@Nested 
-	class DietPlanTest {
-		DietPlan plan = new DietPlan(23,45,56,78);
-		
-		@Test 
-		void should_Set_Correct_Calories() {
-			plan.setCalories(22);
-			Assertions.assertTrue(plan.getCalories() == 22);
-		}
-		
-		@Test 
-		void should_Set_Correct_Carbohydrate() {
-			plan.setCarbohydrate(44);
-			Assertions.assertTrue(plan.getCarbohydrate() == 44);
-		}
-		
-		@Test 
-		void should_Set_Correct_Fat() {
-			plan.setFat(12);
-			Assertions.assertTrue(plan.getFat() == 12);
-		}
-		
-		@Test 
-		void should_Set_Correct_Protein() {
-			plan.setProtein(100);
-			Assertions.assertTrue(plan.getProtein() == 100);
-		}
-		
-		@Test 
-		void should_return_correct_String() {
-			
-			String expectedStr = "Diet [calories=23, protein=45, fat=56, carbohydrate=78]";
-			
-			Assertions.assertEquals(expectedStr,plan.toString());
-		}
-	}
-	
 	@Nested
 	class BMICalculatorTest {
 		@Test
