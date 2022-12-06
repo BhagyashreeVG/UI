@@ -1,0 +1,19 @@
+06-Dec-2022 05:31:09 ERROR - Validator.INVALID_EMPLOYEE_NAME
+java.lang.Exception: Validator.INVALID_EMPLOYEE_NAME
+	at com.myapp.validator.Validator.validate(Validator.java:12) [classes/:?]
+	at com.myapp.Tester.main(Tester.java:12) [classes/:?]
+06-Dec-2022 05:38:07 ERROR - Validator.INVALID_EMPLOYEE_NAME
+java.lang.Exception: Validator.INVALID_EMPLOYEE_NAME
+	at com.myapp.validator.Validator.validate(Validator.java:13) [classes/:?]
+	at com.myapp.Tester.main(Tester.java:12) [classes/:?]
+06-Dec-2022 05:38:07 ERROR - ----The employee name is invalid.------
+06-Dec-2022 05:38:50 ERROR - Validator.INVALID_EMPLOYEE_NAME
+java.lang.Exception: Validator.INVALID_EMPLOYEE_NAME
+	at com.myapp.validator.Validator.validate(Validator.java:13) [classes/:?]
+	at com.myapp.Tester.main(Tester.java:12) [classes/:?]
+06-Dec-2022 05:38:50 ERROR - ----The employee name is invalid.------
+06-Dec-2022 05:39:23 ERROR - Validator.INVALID_EMPLOYEE_ID
+java.lang.Exception: Validator.INVALID_EMPLOYEE_ID
+	at com.myapp.validator.Validator.validate(Validator.java:15) [classes/:?]
+	at com.myapp.Tester.main(Tester.java:12) [classes/:?]
+06-Dec-2022 05:39:24 ERROR - The entered employee ID is invalid.
