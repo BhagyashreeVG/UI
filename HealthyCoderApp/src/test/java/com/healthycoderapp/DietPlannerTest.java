@@ -127,8 +127,8 @@ class DietPlannerTest {
 		
 		@Test 
 		void should_Set_Correct_Protein() {
-			plan.setProtein(90);
-			Assertions.assertTrue(plan.getProtein() == 90);
+			plan.setProtein(100);
+			Assertions.assertTrue(plan.getProtein() == 100);
 		}
 		
 		@Test 
