@@ -11,6 +11,7 @@ import com.java.solid.entity.Employee;
 public class OutputProcessor {
 	List<Employee> employeeList = new ArrayList<>();
 	
+	//Process output post query execution mainly for select queries
 	public void process(ResultSet myRs, int selection) {
 		try {
 			if (selection == 2) {

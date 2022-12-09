@@ -23,6 +23,7 @@ public class DatabaseController implements DatabaseConnection {
 		this.details = new DatabaseDetails(url, userName, password);
 	}
 
+	//Perform db connection
 	public boolean connect() {
 		try { 
 			myConn = DriverManager.getConnection(details.url, details.userName , details.password);
@@ -33,6 +34,7 @@ public class DatabaseController implements DatabaseConnection {
 		}	
 	}
 	
+	//Execute sql queries
 	public void executeQuery(String query, Employee employee, int selection, int searchSelection) {
 		try {
 			pstmt = myConn.prepareStatement(query);	

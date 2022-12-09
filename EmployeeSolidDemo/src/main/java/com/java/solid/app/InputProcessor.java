@@ -1,7 +1,5 @@
 package com.java.solid.app;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import com.java.solid.entity.*;
@@ -11,8 +9,8 @@ public class InputProcessor {
 	int searchSelection = 0;
 	Employee employee = new Employee();
 	
+	//Process inputs from console
 	public String process() {
-	//Ask for selection input
 		Scanner scanner = new Scanner(System.in);
 		this.selection = scanner.nextInt();
 		String query = null;
