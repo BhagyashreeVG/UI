@@ -130,7 +130,7 @@ public class Test {
 					}
 					if (searchSelection == 4) {
 						System.out.println("Search Employee By Department:");
-						System.out.println("enter the id:");
+						System.out.println("enter the department:");
 						String dept = scanner.next();
 						pstmt = myConn.prepareStatement("SELECT * FROM Employees WHERE department='" + dept + "';");
 					}
@@ -145,6 +145,18 @@ public class Test {
 						emp.setSalary(myRs.getDouble(6));
 						System.out.println(emp);
 						}
+				}
+				
+				if (selection == 4) {
+					System.out.println("Enter id of employee to be deleted");
+					int id = scanner.nextInt();
+					String deleteSql = "delete from Employees where id=?";
+					pstmt = myConn.prepareStatement(deleteSql);
+					pstmt.setInt(1,id);
+					int rowDeleted = pstmt.executeUpdate();
+					if(rowDeleted > 0) {
+						System.out.println("Employee deleted");
+					}
 				}
 			}
 		}
